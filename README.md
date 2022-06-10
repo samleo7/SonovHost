@@ -3,4 +3,7 @@
 ## MVP y Login
 [![Pant-Sonov-Host1.png](https://i.postimg.cc/3JhBQVsN/Pant-Sonov-Host1.png)](https://postimg.cc/mhdMQX2W)
 
+## Botones de navegacion - Guardar - Mostrar por item
+[![Pant-Sonov-Host2.png](https://i.postimg.cc/QMjGBfKd/Pant-Sonov-Host2.png)](https://postimg.cc/HrvPR4tq)
+
 
