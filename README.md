@@ -6,7 +6,7 @@
 ## Botones de navegacion - Guardar - Mostrar por item
 [![Pant-Sonov-Host2.png](https://i.postimg.cc/QMjGBfKd/Pant-Sonov-Host2.png)](https://postimg.cc/HrvPR4tq)
 
-## Actulizar - Borrar - Envio de mensaje por celular, whatsapp o gmail
+## Actualizar - Borrar - Envio de mensaje por celular, whatsapp o gmail
 [![Pant-Sonov-Host3.png](https://i.postimg.cc/SRjqTzqR/Pant-Sonov-Host3.png)](https://postimg.cc/jnVGC2DY)
 
 
