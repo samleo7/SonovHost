@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/plum_700" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/dominio_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="12dp"
+        android:text="Dominio:"
+        android:textColor="@color/teal_500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/id_dominio_cardview_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/teal_500"
+        android:paddingStart="5dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/ic_field_transp_gris"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/dominio_tv"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        tools:text="www.carritosdecompras.com " />
+
+    <TextView
+        android:id="@+id/usuario_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/posterCardView" />
+
+    <TextView
+        android:id="@+id/id_usuario_cardview_tv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        tools:text="Juan Castillo Perez"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:paddingStart="5dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/usuario_tv"
+        app:layout_constraintTop_toBottomOf="@+id/posterCardView" />
+
+    <TextView
+        android:id="@+id/clave_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Clave:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/id_fechregist_cardview_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_dominio_cardview_tv" />
+
+    <TextView
+        android:id="@+id/id_clave_cardview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/clave_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_dominio_cardview_tv"
+        android:text="------------------" />
+
+
+    <TextView
+        android:id="@+id/fechregist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha Registro:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/usuario_tv" />
+
+    <TextView
+        android:id="@+id/id_fechregist_cardview_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/fechregist_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_usuario_cardview_tv"
+        tools:text="14/02/2021" />
+
+    <ToggleButton
+        android:id="@+id/id_btntoggle_iconomsn_cardview_tb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/toggle_selector_msn"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toStartOf="@+id/id_estado_enviadomsntoog_cardview_tv"
+        app:layout_constraintStart_toEndOf="@+id/id_fechregist_cardview_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_clave_cardview_tv" />
+
+    <TextView
+        android:id="@+id/id_estado_enviadomsntoog_cardview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:paddingStart="5dp"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/id_clave_cardview_tv"
+        tools:text="----------------------------------------------" />
+
+    <TextView
+        android:id="@+id/fechvencim_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha Vencimient:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/fechregist_tv" />
+
+    <TextView
+        android:id="@+id/id_fechvencim_cardview_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/fechvencim_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_fechregist_cardview_tv"
+        tools:text="14/02/2022" />
+
+    <ToggleButton
+        android:id="@+id/id_btntoggle_iconoestadohost_cardview_tb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/toggle_selector_estado_renovhost"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toStartOf="@+id/id_estadorenovhost_toog_cardview_tv"
+        app:layout_constraintStart_toEndOf="@+id/id_fechregist_cardview_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_btntoggle_iconomsn_cardview_tb" />
+
+    <TextView
+        android:id="@+id/id_estadorenovhost_toog_cardview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_field_transp_gris"
+        android:paddingBottom="1dp"
+        android:text="--------------------------------------------"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/id_btntoggle_iconoestadohost_cardview_tb"
+        app:layout_constraintTop_toBottomOf="@+id/id_estado_enviadomsntoog_cardview_tv" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_timer"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/fechvencim_tv" />
+
+    <TextView
+        android:id="@+id/id_timecaducid_cardview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 days finish"
+        android:textColor="@color/color_rojo_oscur"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/id_fechvencim_cardview_tv" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/id_redsocial_cardview_tv"
+        app:layout_constraintStart_toEndOf="@+id/id_timecaducid_cardview_tv"
+        app:layout_constraintTop_toBottomOf="@+id/id_btntoggle_iconoestadohost_cardview_tb" />
+
+    <TextView
+        android:id="@+id/id_redsocial_cardview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="-------------------------------"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/id_estadorenovhost_toog_cardview_tv" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/posterCardView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/id_imagen_clienthost_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/all"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/drawer_navig_background" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gradient_white" />
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_clien_host">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.sonovhost.ui.fragments_buttomnavig.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_clien_host"
+        android:name="com.example.sonovhost.ui.fragments_buttomnavig.ClienHostFragment"
+        android:label="@string/title_clien_host"
+        tools:layout="@layout/fragment_clien_host" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.sonovhost.ui.fragments_buttomnavig.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+
+
+    <fragment
+        android:id="@+id/mensajesFragment"
+        android:name="com.example.sonovhost.ui.fragment_drawnavig.MensajesFragment"
+        android:label="fragment_mensajes"
+        tools:layout="@layout/fragment_mensajes" />
+    <fragment
+        android:id="@+id/notasFragment"
+        android:name="com.example.sonovhost.ui.fragment_drawnavig.NotasFragment"
+        android:label="fragment_notas"
+        tools:layout="@layout/fragment_notas" />
+    <fragment
+        android:id="@+id/caducidadFragment"
+        android:name="com.example.sonovhost.ui.fragment_drawnavig.CaducidadFragment"
+        android:label="fragment_caducidad"
+        tools:layout="@layout/fragment_caducidad" />
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.sonovhost.ui.fragment_drawnavig.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/clientesFragment"
+        android:name="com.example.sonovhost.ui.fragment_drawnavig.ClientesFragment"
+        android:label="fragment_clientes"
+        tools:layout="@layout/fragment_clientes" />
+
+
+
+    <fragment
+        android:id="@+id/enviarSmsWassCorrFragment"
+        android:name="com.example.sonovhost.ui.fragments_buttomnavig.activ_clienhost.EnviarSmsWassCorrFragment"
+        android:label="fragment_enviar_sms_wass_corr"
+        tools:layout="@layout/fragment_enviar_sms_wass_corr" />
+
+
+</navigation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mensajesFragment"
+            android:icon="@drawable/ic_email"
+            android:title="@string/mensaj"/>
+        <item
+            android:id="@+id/notasFragment"
+            android:icon="@drawable/ic_event_note"
+            android:title="@string/nota"/>
+        <item
+            android:id="@+id/caducidadFragment"
+            android:icon="@drawable/ic__hourglass"
+            android:title="@string/caduci"/>
+        <item
+            android:id="@+id/favoritosFragment"
+            android:icon="@drawable/ic_favorite_border"
+            android:title="@string/favori"/>
+    </group>
+
+    <item android:title="OTROS" >
+        <menu>
+            <item
+                android:id="@+id/clientesFragment"
+                android:icon="@drawable/ic_client"
+                android:title="@string/client"
+                />
+        </menu>
+    </item>
+
+</menu>

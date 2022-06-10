@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFD"
+    tools:context=".ui.fragments_buttomnavig.activ_clienhost.EnviarSmsWassCorrActivity">
+
+    <ImageView
+        android:id="@+id/imgTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/gradient_login"
+        android:src="@drawable/mensajeria"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_msj_texto_enviar_swc_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Mensaje"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:maxLines="8"
+        android:minLines="2"
+        android:background="@drawable/ic_field"
+        android:paddingStart="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitulo" />
+
+    <EditText
+        android:id="@+id/id_nombre_contacto_enviar_swc_et"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_field"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Nombre Contacto"
+        android:inputType="textPersonName"
+        android:paddingStart="7dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_msj_texto_enviar_swc_et" />
+
+    <EditText
+        android:id="@+id/id_numero_celular_enviar_swc_et"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/ic_field"
+        android:ems="10"
+        android:hint="Nro Celular"
+        android:inputType="phone"
+        android:paddingStart="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_nombre_contacto_enviar_swc_et"
+        app:layout_constraintTop_toBottomOf="@+id/id_msj_texto_enviar_swc_et" />
+
+
+    <Button
+        android:id="@+id/id_btn_sms_enviar_swc"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/sms"
+        android:text="Sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_nombre_contacto_enviar_swc_et" />
+
+    <Button
+        android:id="@+id/id_btn_wassapt_enviar_swc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:drawableRight="@drawable/whatsapp"
+        android:text="Whatsapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_btn_sms_enviar_swc"
+        app:layout_constraintTop_toBottomOf="@+id/id_numero_celular_enviar_swc_et" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/id_floating_selec_contact_enviar_swc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:clickable="true"
+        app:elevation="4dp"
+        app:fabCustomSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_btn_wassapt_enviar_swc"
+        app:layout_constraintStart_toEndOf="@+id/id_numero_celular_enviar_swc_et"
+        app:layout_constraintTop_toBottomOf="@+id/id_msj_texto_enviar_swc_et"
+        app:srcCompat="@drawable/ic_contact_phone"
+        tools:ignore="VectorDrawableCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_sms_enviar_swc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border_gris"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:text="To"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/id_to_correo_enviar_swc_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/id_asunto_enviar_swc_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_border_gris"
+            android:hint="Asunto"
+            android:padding="6dp"
+            android:paddingStart="12dp" />
+
+        <EditText
+            android:id="@+id/id_message_enviar_swc_et"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_border_gris"
+            android:gravity="top"
+            android:hint="Message"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/id_btn_send_enviar_swc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableRight="@drawable/gmail"
+            android:text="Gmail" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

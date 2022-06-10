@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#043DCF</color>
+    <color name="purple_700">#010E4C</color>
+    <color name="teal_200">#043DCF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#ffffff</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorThemeAzulOscu">#010E4C</color>
+    <color name="colorThemeAzulClar">#043DCF</color>
+    <color name="colorThemeAzulClar2">#396DF3</color>
+
+    <color name="colorPrimaryText">#222934</color>
+    <color name="colorSecondaryText">#989898</color>
+
+    <color name="colorSnackBarSuccess">#8bc34a</color>
+    <color name="colorSnackBarError">#f72400</color>
+
+    <color name="color_lightGrey">#f1f1f1</color>
+
+    <color name="colorBorder">#e8e6e6</color>
+    <color name="colorDarkGrey">#878787</color>
+
+
+
+    <color name="black_200">#aaaaaa</color>
+    <color name="black_500">#303231</color>
+    <color name="black_700">#FF000000</color>
+    <color name="orange_200">#ff8e4b</color>
+    <color name="orange_500">#ffff694a</color>
+    <color name="plum_700">#1D1D27</color>
+    <color name="purple_5000">#663399</color>
+    <color name="teal_2000">#ff3cecb3</color>
+    <color name="teal_500">#ff43d7dc</color>
+    <color name="color_rojo">#FF0000</color>
+    <color name="color_rojo_oscur">#BD0000</color>
+
+    <color name="color_status_detail">#333599</color>
+
+    <color name="color_ico_fab">#8D89A2FD</color>
+
+
+
+</resources>

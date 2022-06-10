@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDD835"
+    tools:context=".ui.fragment_drawnavig.MensajesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_margin="100dp"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="MENSAJES" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

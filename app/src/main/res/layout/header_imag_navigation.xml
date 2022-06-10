@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/drawer_navig_background"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/id_tit_drawer_navigat_tv"
+        android:text="@string/soluc_tecnolo"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="8dp"
+        android:background="#41000000"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

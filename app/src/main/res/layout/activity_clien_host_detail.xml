@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plum_700"
+    tools:context=".ui.fragments_buttomnavig.activ_clienhost.ClienHostDetailActivity">
+
+    <ImageView
+        android:id="@+id/id_background_imagen_clienhost_detail_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/all"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/upload" />
+
+
+    <View
+        android:id="@+id/view_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="0dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardview_detail">
+
+        <ImageView
+            android:id="@+id/id_imagen_clienhost_detail_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/all"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/upload" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/plum_700"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dominio_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:text="Dominio:"
+                android:textColor="@color/teal_500"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/id_dominio_clienhost_detail_tv"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/dominio_tv"
+                android:autofillHints="Dominio www."
+                android:background="@drawable/ic_field_transp_gris"
+                android:drawablePadding="10dp"
+                android:ems="80"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/teal_500"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_dominio"
+                tools:text="www.carritosdecompras.com" />
+
+            <TextView
+                android:id="@+id/usuario_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dominio_tv"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Usuario:"
+                android:textColor="@color/orange_200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/id_usuario_clienhost_detail_tv"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/dominio_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/dominio_tv"
+                android:autofillHints="Dominio www."
+                android:background="@drawable/ic_field_transp_gris"
+                android:drawablePadding="10dp"
+                android:ems="80"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/orange_200"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_usuario"
+                tools:text="Denistry Carrillo Zomaroma" />
+
+            <TextView
+                android:id="@+id/descrip_nota_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usuario_tv"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:rotationX="29"
+                android:text="Descripcion/Notas:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/id_description_clienhost_detail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descrip_nota_tv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/description"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
